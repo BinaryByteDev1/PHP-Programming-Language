@@ -48,6 +48,63 @@ echo"<br> <br>";
 echo count($fruits);
 
 
+echo"<br> <br>";
+
+// Updation in indexed array
+$array = array(10,20,30,40,50,60,70,80,90100);
+
+echo $array[0];
+echo $array[1];
+echo $array[2];
+echo $array[3];
+echo $array[4];
+echo $array[5];
+
+
+//Update values in array
+
+$array[0] = 100;
+$array[1] = 200;
+$array[2] = 300;
+$array[3] = 400;
+$array[4] = 500;
+$array[5] = 600;
+
+echo"<br> <br>";
+
+echo $array[0];
+echo $array[1];
+echo $array[2];
+echo $array[3];
+echo $array[4];
+echo $array[5];
+
+echo"<br> <br>";
+
+// Sum of all elements in array
+
+$array2 = array(10,20,30,40,50,60,70,80,90,100);
+
+$sum = 0;
+
+for($i = 0; $i < count($array2); $i++){
+    $sum = $sum + $array2[$i];
+}
+
+echo "Sum of array = ", $sum;
+
+
+echo"<br> <br>";
+
+// sum using for each loop
+$sum2 = 0;
+
+foreach($array2 as $values){
+    $sum2 += $values;
+}
+echo "Sum of array = ",$sum2;
+
+
 
 
 
